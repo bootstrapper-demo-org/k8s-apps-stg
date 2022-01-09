@@ -9,6 +9,9 @@ spec:
     path: external-dns
     repoURL: git@github.com:bootstrapper-demo-org/k8s-infra.git
     targetRevision: main
+    helm:
+      valueFiles:
+        - values-stg.yaml    
   destination:
     namespace: default
     server: https://kubernetes.default.svc
